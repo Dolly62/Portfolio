@@ -79,18 +79,33 @@ img {
   max-width: 100%;
 }
 
-
 /* =========================== REUSABLE CSS ========================= */
-.grid{
+
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+}
+.grid {
   display: grid;
   gap: 30px;
 }
 
-.section{
+.section {
   padding-block: 70px;
 }
 
-.button{
+.section__title {
+  font-size: var(--big-font-size);
+  font-weight: var(--weight-800);
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section__title span{
+  color: var(--first-color);
+}
+
+.button {
   display: inline-block;
   color: var(--title-color);
   border: 1px solid var(--first-color);
@@ -103,25 +118,25 @@ img {
   overflow: hidden;
 }
 
-.button:hover{
+.button:hover {
   color: var(--text-white);
 }
 
-.button::before{
-content: "";
-position: absolute;
-inset: 0;
-background-color: var(--first-color);
-transform: translate(100%);
-z-index: -1;
-transition: all 0.3s ease-out;
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--first-color);
+  transform: translate(100%);
+  z-index: -1;
+  transition: all 0.3s ease-out;
 }
 
-.button:hover::before{
+.button:hover::before {
   transform: translate(0);
 }
 
-.button__icon{
+.button__icon {
   background-color: var(--first-color);
   position: absolute;
   inset-block: -2px;
