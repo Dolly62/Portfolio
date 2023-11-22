@@ -6,6 +6,7 @@
   width: 100%;
   padding: 60px 30px;
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: 100;
 }
 
 .show-menu {
@@ -43,6 +44,7 @@
   border-radius: 5px;
   background-color: var(--container-color);
   padding: 12px 10px;
+  z-index: 100;
 }
 
 .nav__toggle span {
@@ -80,6 +82,7 @@
     right: 30px;
     display: flex;
     align-items: center;
+    z-index: 100;
   }
 
   .nav__item {
@@ -94,6 +97,10 @@
     height: 50px;
     border-radius: 50%;
     position: relative;
+  }
+
+ .nav__link{
+    border-color:  hsl(0, 0%, 15%);
   }
 
   .nav__icon {
@@ -135,4 +142,21 @@
   .active-nav .nav__icon {
     color: var(--text-white);
   }
+}
+
+@media screen and (max-width: 576px) {
+  .nav__toggle{
+    top: 20px;
+    right: 15px;
+  }
+
+  .nav__link{
+    column-gap: 20px;
+  }
+
+  .nav__icon,
+  .nav__name{
+    font-size: var(--h3-font-size);
+  }
+
 }

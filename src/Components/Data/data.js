@@ -15,19 +15,16 @@ import react from "../assets/react.png";
 import bootstrap from "../assets/bootstrap.png";
 import github from "../assets/github.png";
 
-
-import Theme1 from '../assets/purple.png';
-import Theme2 from '../assets/red.png';
-import Theme3 from '../assets/blueviolet.png';
-import Theme4 from '../assets/blue.png';
-import Theme5 from '../assets/goldenrod.png';
-import Theme6 from '../assets/magenta.png';
-import Theme7 from '../assets/yellowgreen.png';
-import Theme8 from '../assets/orange.png';
-import Theme9 from '../assets/green.png';
-import Theme10 from '../assets/yellow.png';
-
-
+import Theme1 from "../assets/purple.png";
+import Theme2 from "../assets/red.png";
+import Theme3 from "../assets/blueviolet.png";
+import Theme4 from "../assets/blue.png";
+import Theme5 from "../assets/goldenrod.png";
+import Theme6 from "../assets/magenta.png";
+import Theme7 from "../assets/yellowgreen.png";
+import Theme8 from "../assets/orange.png";
+import Theme9 from "../assets/green.png";
+import Theme10 from "../assets/yellow.png";
 
 export const links = [
   {
@@ -89,12 +86,6 @@ export const personalInfo = [
   },
 
   {
-    id: 7,
-    title: "Phone : ",
-    description: "9354429649",
-  },
-
-  {
     id: 8,
     title: "Email : ",
     description: "kambojdolly107919@gmail.com",
@@ -111,37 +102,37 @@ export const skills = [
   {
     id: 1,
     title: "Html5",
-    icons: html ,
+    icons: html,
   },
 
   {
     id: 2,
     title: "CSS3",
-    icons: css ,
+    icons: css,
   },
 
   {
     id: 3,
     title: "Javascript",
-    icons:  javascript ,
+    icons: javascript,
   },
 
   {
     id: 4,
     title: "React",
-    icons:  react ,
+    icons: react,
   },
 
   {
     id: 5,
     title: "Bootstrap",
-    icons:  bootstrap ,
+    icons: bootstrap,
   },
 
   {
     id: 6,
     title: "GitHub",
-    icons:  github ,
+    icons: github,
   },
 ];
 
@@ -149,60 +140,88 @@ export const themes = [
   {
     id: 1,
     img: Theme1,
-    color: 'hsl(252, 35%, 51%)',
+    color: "hsl(252, 35%, 51%)",
   },
 
   {
     id: 2,
     img: Theme2,
-    color: 'hsl(4, 93%, 54%)',
+    color: "hsl(4, 93%, 54%)",
   },
 
   {
     id: 3,
     img: Theme3,
-    color: 'hsl(271, 76%, 53%)',
+    color: "hsl(271, 76%, 53%)",
   },
 
   {
     id: 4,
     img: Theme4,
-    color: 'hsl(225, 73%, 57%)',
+    color: "hsl(225, 73%, 57%)",
   },
 
   {
     id: 5,
     img: Theme5,
-    color: 'hsl(43, 74%, 49%)',
+    color: "hsl(43, 74%, 49%)",
   },
 
   {
     id: 6,
     img: Theme6,
-    color: 'hsl(339, 81%, 66%)',
+    color: "hsl(339, 81%, 66%)",
   },
 
   {
     id: 7,
     img: Theme7,
-    color: 'hsl(80, 61%, 50%)',
+    color: "hsl(80, 61%, 50%)",
   },
 
   {
     id: 8,
     img: Theme8,
-    color: 'hsl(19, 96%, 52%)',
+    color: "hsl(19, 96%, 52%)",
   },
 
   {
     id: 9,
     img: Theme9,
-    color: 'hsl(88, 65%, 43%)',
+    color: "hsl(88, 65%, 43%)",
   },
 
   {
     id: 10,
     img: Theme10,
-    color: 'hsl(42, 100%, 50%)',
+    color: "hsl(42, 100%, 50%)",
+  },
+];
+
+export const portfolio = [
+  {
+    id: 1,
+    title: "E-commerce",
+    description:
+      "A simple E-commerce website built with ReactJs and Context API",
+    url: "https://github.com/Dolly62/Ecommerce-Website.git",
+    img: Ecommerce,
+    technologies: ["ReactJs", "Context API", "Firebase", "CSS"],
+  },
+  {
+    id: 2,
+    title: "Expense Tracker",
+    description: "An Expense Tracker website built with ReactJs and Redux",
+    url: "https://github.com/Dolly62/X-expense-tracker.git",
+    img: ExpenseTracker,
+    technologies: ["ReactJs", "Redux", "Firebase", "Bootstrap"],
+  },
+  {
+    id: 3,
+    title: "MailBox Client",
+    description: "A MailBox Client website built with ReactJs and Redux",
+    url: "https://github.com/Dolly62/MailBox.git",
+    img: MailBoxClient,
+    technologies: ["ReactJs", "Redux", "Firebase", "CSS Modules"],
   },
 ];

@@ -5,11 +5,13 @@ import About from "./Components/About/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import Navbar from "./Components/Header/Navbar";
+import Theme from "./Components/Theme/Theme";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Theme/>
       <Switch>
         <Route path="/home">
           <Home />

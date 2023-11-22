@@ -14,7 +14,7 @@ const About = () => {
         </h2>
 
         <div className="about__container">
-          <div className="about__info">
+          {/* <div className="about__info"> */}
             <h3 className="section__subtitle">Personal Infos</h3>
             <ul className="info__list grid">
               <Info />
@@ -26,7 +26,7 @@ const About = () => {
                 <FaDownload />
               </span>
             </a>
-          </div>
+          {/* </div> */}
         </div>
       </section>
 
