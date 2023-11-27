@@ -18,22 +18,78 @@ function App() {
       <Theme />
       <Switch>
         <Route path="/home">
-          <React.Suspense fallback={<Loader />}>
+          <React.Suspense
+            fallback={
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100vh",
+                  width: "100vw",
+                }}
+              >
+                <Loader />
+              </div>
+            }
+          >
             <Home />
           </React.Suspense>
         </Route>
         <Route path="/about">
-          <React.Suspense fallback={<Loader />}>
+          <React.Suspense
+            fallback={
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100vh",
+                  width: "100vw",
+                }}
+              >
+                <Loader />
+              </div>
+            }
+          >
             <About />
           </React.Suspense>
         </Route>
         <Route path="/portfolio">
-          <React.Suspense fallback={<Loader />}>
+          <React.Suspense
+            fallback={
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100vh",
+                  width: "100vw",
+                }}
+              >
+                <Loader />
+              </div>
+            }
+          >
             <Portfolio />
           </React.Suspense>
         </Route>
         <Route path="/contact">
-          <React.Suspense fallback={<Loader />}>
+          <React.Suspense
+            fallback={
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100vh",
+                  width: "100vw",
+                }}
+              >
+                <Loader />
+              </div>
+            }
+          >
             <Contact />
           </React.Suspense>
         </Route>
