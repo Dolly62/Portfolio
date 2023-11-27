@@ -14,19 +14,17 @@ const About = () => {
         </h2>
 
         <div className="about__container">
-          {/* <div className="about__info"> */}
-            <h3 className="section__subtitle">Personal Infos</h3>
-            <ul className="info__list grid">
-              <Info />
-            </ul>
+          <h3 className="section__subtitle">Personal Infos</h3>
+          <ul className="info__list grid">
+            <Info />
+          </ul>
 
-            <a href={Resume} download="" className="button">
-              Download CV
-              <span className="button__icon">
-                <FaDownload />
-              </span>
-            </a>
-          {/* </div> */}
+          <a href={Resume} download="" className="button">
+            Download CV
+            <span className="button__icon">
+              <FaDownload />
+            </span>
+          </a>
         </div>
       </section>
 
