@@ -107,7 +107,7 @@ img {
 /* =========================== REUSABLE CSS ========================= */
 
 .container {
-  /* max-width: 1230px; */
+  max-width: 1230px;
   margin-inline: auto;
 }
 .grid {
@@ -172,4 +172,11 @@ img {
   font-size: var(--large-font-size);
   text-align: center;
   line-height: 60px;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: calc(100% - 180px);
+  }
 }

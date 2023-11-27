@@ -10,6 +10,8 @@ const Contact = () => {
   const [userSubject, setUserSubject] = useState("");
   const [userMessage, setUserMessage] = useState("");
 
+  const [alertMessage, setAlertMessage] = useState(null);
+
   const contactFormHandler = async (e) => {
     e.preventDefault();
     const email = userEmail.replace(/[@.]/g, "");
@@ -35,10 +37,17 @@ const Contact = () => {
       if (!response.ok) {
         throw new Error("Failed to send message!");
       }
-      alert("Your message has been sent successfully!");
+      setAlertMessage({
+        type: "success",
+        message: "Your message has been sent successfully!",
+      });
     } catch (error) {
-      alert(error.message);
+      setAlertMessage({
+        type: "error",
+        message: "Failed to send message. Please try again later.",
+      });
     } finally {
+      setTimeout(() => setAlertMessage(null), 2000);
       setUsername("");
       setUserEmail("");
       setUserSubject("");
@@ -88,6 +97,14 @@ const Contact = () => {
             </a>
           </div>
         </div>
+
+        {alertMessage && (
+          <div className="form__alert">
+            <p className={`alert ${alertMessage.type}`}>
+              {alertMessage.message}
+            </p>
+          </div>
+        )}
 
         <form onSubmit={contactFormHandler} className="contact__form">
           <div className="form__input-group">

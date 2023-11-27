@@ -3,17 +3,17 @@ import {
   FaUser,
   FaFolderOpen,
   FaEnvelopeOpen,
-  FaBriefcase,
-  FaGraduationCap,
-  FaCode,
 } from "react-icons/fa";
-import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/js.png";
 import react from "../assets/react.png";
 import bootstrap from "../assets/bootstrap.png";
 import github from "../assets/github.png";
+import illustrator from "../assets/illustrator.png";
+import photoshop from "../assets/photoshop.png";
+import ExpenseTracker from "../assets/expense.png"
+import MailBoxClient from "../assets/mailbox.png"
 
 import Theme1 from "../assets/purple.png";
 import Theme2 from "../assets/red.png";
@@ -134,6 +134,16 @@ export const skills = [
     title: "GitHub",
     icons: github,
   },
+  {
+    id: 7,
+    title: "Illustrator",
+    icons: illustrator,
+  },
+  {
+    id: 8,
+    title: "Photoshop",
+    icons: photoshop,
+  },
 ];
 
 export const themes = [
@@ -201,27 +211,16 @@ export const themes = [
 export const portfolio = [
   {
     id: 1,
-    title: "E-commerce",
-    description:
-      "A simple E-commerce website built with ReactJs and Context API",
-    url: "https://github.com/Dolly62/Ecommerce-Website.git",
-    img: Ecommerce,
-    technologies: ["ReactJs", "Context API", "Firebase", "CSS"],
-  },
-  {
-    id: 2,
     title: "Expense Tracker",
-    description: "An Expense Tracker website built with ReactJs and Redux",
-    url: "https://github.com/Dolly62/X-expense-tracker.git",
+    url: "https://x-expense43.web.app/signin",
     img: ExpenseTracker,
     technologies: ["ReactJs", "Redux", "Firebase", "Bootstrap"],
   },
   {
-    id: 3,
+    id: 2,
     title: "MailBox Client",
-    description: "A MailBox Client website built with ReactJs and Redux",
-    url: "https://github.com/Dolly62/MailBox.git",
+    url: "https://mailbox-client-477fb.web.app/login",
     img: MailBoxClient,
-    technologies: ["ReactJs", "Redux", "Firebase", "CSS Modules"],
+    technologies: ["ReactJs", "Redux", "Firebase", "CSS"],
   },
 ];

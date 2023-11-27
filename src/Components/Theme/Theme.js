@@ -30,6 +30,7 @@ const Theme = () => {
 
   const changeColorHandler = (color) => {
     setColor(color);
+    setShowSwitcher(false)
   };
 
   const toggleThemeHandler = () => {
