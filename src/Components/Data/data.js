@@ -1,9 +1,4 @@
-import {
-  FaHome,
-  FaUser,
-  FaFolderOpen,
-  FaEnvelopeOpen,
-} from "react-icons/fa";
+import { FaHome, FaUser, FaFolderOpen, FaEnvelopeOpen } from "react-icons/fa";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/js.png";
@@ -12,8 +7,10 @@ import bootstrap from "../assets/bootstrap.png";
 import github from "../assets/github.png";
 import illustrator from "../assets/illustrator.png";
 import photoshop from "../assets/photoshop.png";
-import ExpenseTracker from "../assets/expense.png"
-import MailBoxClient from "../assets/mailbox.png"
+import ExpenseTracker from "../assets/expense.png";
+import MailBoxClient from "../assets/mailbox.png";
+import LandingPage from "../assets/Landingpage.png";
+import ResponsiveWebpage from "../assets/Responsive.png";
 
 import Theme1 from "../assets/purple.png";
 import Theme2 from "../assets/red.png";
@@ -213,14 +210,32 @@ export const portfolio = [
     id: 1,
     title: "Expense Tracker",
     url: "https://x-expense43.web.app/signin",
+    gitHub: "https://github.com/Dolly62/X-expense-tracker.git",
     img: ExpenseTracker,
-    technologies: ["ReactJs", "Redux", "Firebase", "Bootstrap"],
+    technologies: ["ReactJS", "Redux", "Firebase", "BootStrap"],
   },
   {
     id: 2,
     title: "MailBox Client",
     url: "https://mailbox-client-477fb.web.app/login",
+    gitHub: "https://github.com/Dolly62/MailBox.git",
     img: MailBoxClient,
-    technologies: ["ReactJs", "Redux", "Firebase", "CSS"],
+    technologies: ["ReactJS", "Redux", "Firebase", "CSS"],
+  },
+  {
+    id: 3,
+    title: "Landing Page",
+    url: "https://landing-page-4e2ee3.netlify.app/",
+    gitHub: "",
+    img: LandingPage,
+    technologies: ["HTML", "BootStrap"],
+  },
+  {
+    id: 4,
+    title: "Responsive Webpage",
+    url: "https://single-page-application-958281.netlify.app/",
+    gitHub: "https://github.com/Dolly62/Responsive-website.git",
+    img: ResponsiveWebpage,
+    technologies: ["React", "Tailwind"],
   },
 ];

@@ -1,4 +1,6 @@
 import React from "react";
+import Web from "../assets/web.png";
+import GitHub from "../assets/github.png";
 
 const PortfolioItem = (props) => {
   return (
@@ -14,9 +16,20 @@ const PortfolioItem = (props) => {
       </div>
 
       <div className="portfolio__hover">
-        <a href={props.url} target="_blank" rel="noreferrer" title="web-link">
         <h3 className="portfolio__title">{props.title}</h3>
-        </a>
+        <div className="portfolio__links">
+          <a href={props.url} target="_blank" rel="noreferrer" title="website">
+            <img src={Web} alt="Visit web" className="web__img" />
+          </a>
+          <a
+            href={props.gitHub}
+            target="_blank"
+            rel="noreferrer"
+            title="github"
+          >
+            <img src={GitHub} alt="Visit web" className="web__img" />
+          </a>
+        </div>
       </div>
     </div>
   );

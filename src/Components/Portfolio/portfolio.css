@@ -1,108 +1,121 @@
-.portfolio__container{
-    grid-template-columns: repeat(3, 1fr);
+.portfolio__container {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.portfolio__item{
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 325px;
+.portfolio__item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 325px;
 }
 
-.portfolio__img{
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: middle;
-    border: 1px solid var(--first-color);
+.portfolio__img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border: 1px solid var(--first-color);
 }
 
-.portfolio__hover{
-    background-image: linear-gradient(180deg, var(--first-color) 2%, #daebfa 78%);
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.5s ease;
+.portfolio__hover {
+  background-image: linear-gradient(180deg, var(--first-color) 2%, #daebfa 78%);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
-.portfolio__item:hover .portfolio__hover{
-    opacity: 1;
+.portfolio__item:hover .portfolio__hover {
+  opacity: 1;
 }
 
-.portfolio__title{
-    color: var(--text-white);
-    font-size: var(--large-font-size);
-    font-weight: var(--weight-500);
-    transform: translateY(-20px);
-    transition: all 0.5s ease;
-    margin-top: 0;
+.portfolio__title {
+  color: var(--text-white);
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-500);
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+  margin-top: 0;
 }
 
-.portfolio__description{
-    color: var(--text-white);
-    font-size: var(--small-font-size);
-    transform: translateY(100%);
-    transition: all 0.5s ease;
+.portfolio__description {
+  color: var(--text-white);
+  font-size: var(--small-font-size);
+  transform: translateY(100%);
+  transition: all 0.5s ease;
 }
 
-.portfolio__item:hover .portfolio__title{
-    transform: translateY(0);
+.portfolio__item:hover .portfolio__title {
+  transform: translateY(0);
 }
 
-.portfolio__item:hover .portfolio__description{
-    transform: translateY(0);
+.portfolio__item:hover .portfolio__description {
+  transform: translateY(0);
 }
 
-.portfolio__tech{
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.portfolio__tech {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.portfolio__techno{
-    border: 2px solid var(--first-color);
-    border-radius: 20px;
-    padding: 6px;
-    margin: 2px;
-    width: 80px;
-    font-size: var(--smaller-font-size);
+.portfolio__techno {
+  border: 2px solid var(--first-color);
+  border-radius: 20px;
+  padding: 6px;
+  margin: 2px;
+  width: 80px;
+  font-size: var(--smaller-font-size);
 }
 
+.web__img {
+  border: 1px solid var(--first-color);
+  border-radius: 45px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.portfolio__links {
+  display: flex;
+  width: 100px;
+}
 
 @media screen and (max-width: 1024px) {
-    .container{
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 
-    .portfolio__container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .portfolio__tech{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .portfolio__tech {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .portfolio__item{
-        height: 340px;
-    }
+  .portfolio__item {
+    height: 340px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .container{
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .portfolio__container{
-        grid-template-columns: 1fr;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
 
-    .portfolio__tech{
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .portfolio__tech {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
